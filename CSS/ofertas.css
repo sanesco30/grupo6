@@ -3,14 +3,32 @@ body {
     min-height: 100vh;
 }
 
-header, footer {
-    padding: 2px;
-    background-color: red;
+header{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
 }
+
+footer{
+    position: relative;
+    top: 4rem;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.505);
+}
+
 
 main {
     padding: 2px;
-    background-color: blue;
+    background-color: rgba(0, 128, 0, 0.359);   
+    position: relative;
+    top: 2.5rem;
+    bottom: 3rem;
+    
 }
 
 section {
@@ -18,14 +36,12 @@ section {
 }
 
 .oferta {
-    background-color: green;
-    overflow-inline: visible;
     height: 350px;
     overflow: hidden;
 }
 
 .oferta > div {
-    background-color: purple;
+    background-color: rgba(0, 60, 25, 0.682);
     display: inline-block;
 }
 
@@ -33,10 +49,28 @@ img:hover {
     transform: scale(0.9, 0.9);
 }
 
-#selector > div {
+.selector > div {
     display: inline-block;
 }
 
-#selector .item-1 {
+.selector .item-1 {
     color: white;
+}
+
+h1, h2, h3 {
+    padding: 15px;
+    font-size: 3rem;
+    font-weight: bolder;
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f5fffa;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 15);
+}
+
+.piedepagina {
+    margin: 5px;
+    padding: 10px;
 }
